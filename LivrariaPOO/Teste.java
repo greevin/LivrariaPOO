@@ -16,14 +16,14 @@ public class Teste {
         
         //Livro livro1 = new Livro("Livro das Abelhas", "Editora Europa", 1, "Capa Dura", "Portugues", 2222, 230, 111111, 50);
         
-        /*System.out.println(cliente1);
+        System.out.println(cliente1);
         System.out.println();
         System.out.println(gerente1);
         System.out.println();
-        System.out.println(filial1);
-        System.out.println();
+        //System.out.println(filial1);
+        //System.out.println();
         System.out.println(vendedor1);
-        System.out.println();*/
+        System.out.println();
         //System.out.println(livro1);
     }
 }
