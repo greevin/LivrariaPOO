@@ -2,15 +2,19 @@ package LivrariaPOO;
 
 import java.util.*;
 
+/** 
+ * Classe com informações sobre o Cliente
+ * 
+ * **/
 public class Cliente {
     
     private String nome;
-    private int dataDeCadastro;
-    private int dataDeAniversario;
+    private String dataDeCadastro;
+    private String dataDeAniversario;
     private Endereco enderecoDeEntrega;
     private Endereco enderecoDeFaturamento;
 
-    public Cliente(String nome, int dataDeCadastro, int dataDeAniversario, Endereco enderecoDeEntrega,
+    public Cliente(String nome, String dataDeCadastro, String dataDeAniversario, Endereco enderecoDeEntrega,
                    Endereco enderecoDeFaturamento) {
         this.nome = nome;
         this.dataDeAniversario = dataDeAniversario;
@@ -27,19 +31,19 @@ public class Cliente {
         return nome;
     }
 
-    public void setDataDeAniversario(int dataDeAniversario) {
+    public void setDataDeAniversario(String dataDeAniversario) {
         this.dataDeAniversario = dataDeAniversario;
     }
 
-    public int getDataDeAniversario() {
+    public String getDataDeAniversario() {
         return dataDeAniversario;
     }
     
-    public void setDataDeCadastro(int dataDeCadastro) {
+    public void setDataDeCadastro(String dataDeCadastro) {
         this.dataDeCadastro = dataDeCadastro;
     }
 
-    public int getDataDeCadastro() {
+    public String getDataDeCadastro() {
         return dataDeCadastro;
     }
     
@@ -47,8 +51,8 @@ public class Cliente {
     //Endereco enderecoDeEntrega, Endereco enderecoDeFaturamento
     public String toString(){
         return String.format("Nome do Cliente: %s " +
-            "\nCadastrado desde: %d " +
-            "\nData de Aniversário: %d " +
+            "\nCadastrado desde: %s " +
+            "\nData de Aniversário: %s " +
             "\nEndereço de Entrega: %s" +
             "\nEndereço de Faturamento: %s", nome, dataDeCadastro, dataDeAniversario, enderecoDeEntrega, enderecoDeFaturamento);
     }

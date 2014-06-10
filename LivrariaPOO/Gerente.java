@@ -3,7 +3,11 @@ package LivrariaPOO;
 
 import java.util.Date;
 
-public class Gerente extends LivrariaPOO.Funcionario{
+/** 
+ * Classe com as informações do Gerente. Gerente É-UM tipo de Funcionário.
+ * 
+ * **/
+public class Gerente extends Funcionario{
     
     /*private String nome;
     private int dataDeAdmissao;
@@ -55,7 +59,7 @@ public class Gerente extends LivrariaPOO.Funcionario{
     
     //String nome, int dataDeAdmissao, int dataDeAniversario, double salario, Endereco enderecoDaLivraria
 
-    public Gerente(String nome, int dataDeAdmissao, int dataDeAniversario, double salario,
+    public Gerente(String nome, String dataDeAdmissao, String dataDeAniversario, double salario,
                    LivrariaPOO.Endereco enderecoDoFuncionario) {
         super(nome, dataDeAdmissao, dataDeAniversario, salario, enderecoDoFuncionario);
     }

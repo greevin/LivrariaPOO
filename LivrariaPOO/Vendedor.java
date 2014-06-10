@@ -1,10 +1,14 @@
 package LivrariaPOO;
 
+/** 
+ * Classe com as informações do Vendedor. Vendedor É-UM tipo de Funcionário.
+ * 
+ * **/
 
-public class Vendedor extends LivrariaPOO.Funcionario{
+public class Vendedor extends Funcionario{
 
-    public Vendedor(String nome, int dataDeAdmissao, int dataDeAniversario, double salario,
-                    LivrariaPOO.Endereco enderecoDoFuncionario) {
+    public Vendedor(String nome, String dataDeAdmissao, String dataDeAniversario, double salario,
+                    Endereco enderecoDoFuncionario) {
         super(nome, dataDeAdmissao, dataDeAniversario, salario, enderecoDoFuncionario);
     }
     

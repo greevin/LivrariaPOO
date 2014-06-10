@@ -3,11 +3,11 @@ package LivrariaPOO;
 public class Filial {
     
     private String razaoSocial;
-    private LivrariaPOO.Endereco enderecoFisico;
+    private Endereco enderecoFisico;
     private Gerente gerente;
-    private LivrariaPOO.Estoque estoque;
+    private Estoque estoque;
 
-    public Filial(String razaoSocial, LivrariaPOO.Endereco enderecoFisico, Gerente gerente) {
+    public Filial(String razaoSocial, Endereco enderecoFisico, Gerente gerente, Estoque estoque) {
         super();
         this.razaoSocial = razaoSocial;
         this.enderecoFisico = enderecoFisico;

@@ -1,15 +1,18 @@
 package LivrariaPOO;
 
-
+/** 
+ * Classe com as informações do Funcionário
+ * 
+ * **/
 public class Funcionario {
     
     protected String nome;
-    protected int dataDeAdmissao;
-    protected int dataDeAniversario;
+    protected String dataDeAdmissao;
+    protected String dataDeAniversario;
     protected double salario;
     protected LivrariaPOO.Endereco enderecoDoFuncionario;
 
-    public Funcionario(String nome, int dataDeAdmissao, int dataDeAniversario, double salario,
+    public Funcionario(String nome, String dataDeAdmissao, String dataDeAniversario, double salario,
                        LivrariaPOO.Endereco enderecoDoFuncionario) {
         super();
         this.nome = nome;
@@ -19,7 +22,6 @@ public class Funcionario {
         this.enderecoDoFuncionario = enderecoDoFuncionario;
     }
 
-
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -28,19 +30,19 @@ public class Funcionario {
         return nome;
     }
 
-    public void setDataDeAdmissao(int dataDeAdmissao) {
+    public void setDataDeAdmissao(String dataDeAdmissao) {
         this.dataDeAdmissao = dataDeAdmissao;
     }
 
-    public int getDataDeAdmissao() {
+    public String getDataDeAdmissao() {
         return dataDeAdmissao;
     }
 
-    public void setDataDeAniversario(int dataDeAniversario) {
+    public void setDataDeAniversario(String dataDeAniversario) {
         this.dataDeAniversario = dataDeAniversario;
     }
 
-    public int getDataDeAniversario() {
+    public String getDataDeAniversario() {
         return dataDeAniversario;
     }
 

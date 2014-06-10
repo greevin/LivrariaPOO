@@ -7,10 +7,10 @@ public class Teste {
         Endereco endereco3 = new Endereco("Rua", "dos Abacateiros", "3000","Sem complemento", "São Paulo", "SP");
         Endereco endereco4 = new Endereco("Avenida", "dos Jacarandás", "3242", "Casa", "Bento Gonçalves", "RS");
         
-        Cliente cliente1 = new Cliente("José do Nascimento", 12, 12, endereco1, endereco2);
+        Cliente cliente1 = new Cliente("José do Nascimento", "12/12/1986", "13/05/2013", endereco1, endereco2);
         //endereco3 onde o Gerente mora.
-        LivrariaPOO.Gerente gerente1 = new LivrariaPOO.Gerente("Carlos Eduardo", 34, 34, 450,endereco3);
-        LivrariaPOO.Vendedor vendedor1 = new LivrariaPOO.Vendedor("Juliano Pereira", 3434, 434343, 120, endereco4);
+        Gerente gerente1 = new Gerente("Carlos Eduardo", "13/01/1986", "06/05/2003", 450,endereco3);
+        Vendedor vendedor1 = new Vendedor("Juliano Pereira", "10/10/1980", "11/11/2011", 120, endereco4);
         
         //Filial filial1 = new Filial("Livraria da Rua de Cima", endereco3, gerente1);
         
