@@ -9,14 +9,13 @@ public class Livro {
     private int edicao;
     private String formato;
     private String idioma;
-    private int dataDePublicacao;
+    private String dataDePublicacao;
     private int numeroDePaginas;
     private int codigoDeBarras;
     private double preco;
 
-    public Livro(String nome, String editora, int edicao, String formato, String idioma, int dataDePublicacao,
+    public Livro(String nome, String editora, int edicao, String formato, String idioma, String dataDePublicacao,
                  int numeroDePaginas, int codigoDeBarras, double preco) {
-        super();
         this.nome = nome;
         this.editora = editora;
         this.edicao = edicao;
@@ -29,11 +28,11 @@ public class Livro {
     }
 
 
-    public void setDataDePublicacao(int dataDePublicacao) {
+    public void setDataDePublicacao(String dataDePublicacao) {
         this.dataDePublicacao = dataDePublicacao;
     }
 
-    public int getDataDePublicacao() {
+    public String getDataDePublicacao() {
         return dataDePublicacao;
     }
 
@@ -107,7 +106,7 @@ public class Livro {
     public String toString() {
         return String.format("Nome: %s " + "\nEditora: %s" + "\nEdicao: %s" + "\nFormato: %s" + "\nIdioma: %s" +
                              "\nData de Publicação: %s" + "\nNumero de Páginas: %d" + "\nCódigo de Barras: %s" +
-                             "\nPreço: %.2f ", nome, editora, edicao, formato, idioma, dataDePublicacao,
+                             "\nPreço: %.2f", nome, editora, edicao, formato, idioma, dataDePublicacao,
                              numeroDePaginas, codigoDeBarras, preco);
     }
 }

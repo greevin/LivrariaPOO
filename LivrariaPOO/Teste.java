@@ -1,5 +1,7 @@
 package LivrariaPOO;
 
+import java.util.*;
+
 public class Teste {
     public static void main(String[] args) {
         Endereco endereco1 = new Endereco("Avenida", "dos Aeronautas", "444", "Nenhum", "Belo Horizonte", "MG");
@@ -14,7 +16,12 @@ public class Teste {
         
         //Filial filial1 = new Filial("Livraria da Rua de Cima", endereco3, gerente1);
         
-        //Livro livro1 = new Livro("Livro das Abelhas", "Editora Europa", 1, "Capa Dura", "Portugues", 2222, 230, 111111, 50);
+        Livro livro1 = new Livro("Livro das Abelhas", "Editora Europa", 1, "Capa Dura", "Portugues", "05/05/2014", 230, 111111, 50);
+        Livro livro2 = new Livro("O Senhor dos Anéis - Volume Único", "Editora Atlas", 10, "Capa Comum", "Portugues", "09/04/2013", 690, 222222, 150);
+        
+        Estoque estoque = new Estoque();
+        estoque.cadastraLivro(livro1);
+        estoque.cadastraLivro(livro2);
         
         System.out.println(cliente1);
         System.out.println();
@@ -24,6 +31,8 @@ public class Teste {
         //System.out.println();
         System.out.println(vendedor1);
         System.out.println();
+        System.out.println(estoque);
+        //System.out.println();
         //System.out.println(livro1);
     }
 }
