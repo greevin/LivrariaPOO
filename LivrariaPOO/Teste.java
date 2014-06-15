@@ -16,12 +16,15 @@ public class Teste {
         
         //Filial filial1 = new Filial("Livraria da Rua de Cima", endereco3, gerente1);
         
-        Livro livro1 = new Livro("Livro das Abelhas", "Editora Europa", 1, "Capa Dura", "Portugues", "05/05/2014", 230, 111111, 50);
-        Livro livro2 = new Livro("O Senhor dos Anéis - Volume Único", "Editora Atlas", 10, "Capa Comum", "Portugues", "09/04/2013", 690, 222222, 150);
+        Livro livro1 = new Livro("Livro das Abelhas", "Editora Europa", 1, "Portugues", "05/05/2014", 230, 111111, 50, "Capa Dura");
+        Livro livro2 = new Livro("O Senhor dos Anéis - Volume Único", "Editora Atlas", 10, "Portugues", "09/04/2013", 690, 222222, 150, "Capa Comum");
+
+        Jornal jornal1 = new Jornal("O Estado de Minas", "O Estado de Minas", 545454, "Português", "05/10/2013", 50, 22222222, 2);
         
-        Estoque estoque = new Estoque();
+        ItemPedido item = new ItemPedido(jornal1, 3);
+        /*Estoque estoque = new Estoque();
         estoque.cadastraLivro(livro1);
-        estoque.cadastraLivro(livro2);
+        estoque.cadastraLivro(livro2);*/
         
         System.out.println(cliente1);
         System.out.println();
@@ -31,8 +34,14 @@ public class Teste {
         //System.out.println();
         System.out.println(vendedor1);
         System.out.println();
-        System.out.println(estoque);
+        //System.out.println(estoque);
         //System.out.println();
-        //System.out.println(livro1);
+        System.out.println(livro1);
+        System.out.println();
+        System.out.println(livro2);
+        System.out.println();
+        //System.out.println(jornal1);
+        System.out.println(item);
+        
     }
 }

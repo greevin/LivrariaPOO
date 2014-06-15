@@ -4,16 +4,22 @@ import java.util.*;
 
 public class Estoque {
     
-    private ArrayList<Livro> livros = new ArrayList<Livro>();
+    private ArrayList<Item> livros = new ArrayList<Item>();
     
-    public void cadastraLivro(Livro livro){
+    /*public void cadastraLivro(Livro livro){
         livros.add(livro);
     }
     
     //chama o metódo toString da classe Livros
-    public String toString(){
+    /*public String toString(){
         return livros.toString();
-    }
+    }*/
+    
+    /*public String toString(){
+        String resp;
+        for(Livro livro: livros);
+        return resp;
+    }*/
     
     
 

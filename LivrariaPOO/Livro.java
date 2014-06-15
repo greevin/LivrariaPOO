@@ -2,9 +2,11 @@ package LivrariaPOO;
 
 import java.util.Date;
 
-public class Livro {
+public class Livro extends Item {
     
-    private String nome;
+    private String formato;
+    
+    /*private String nome;
     private String editora;
     private int edicao;
     private String formato;
@@ -108,5 +110,24 @@ public class Livro {
                              "\nData de Publicação: %s" + "\nNumero de Páginas: %d" + "\nCódigo de Barras: %s" +
                              "\nPreço: %.2f", nome, editora, edicao, formato, idioma, dataDePublicacao,
                              numeroDePaginas, codigoDeBarras, preco);
+    }*/
+
+    public Livro(String nome, String editora, int edicao, String idioma, String dataDePublicacao, int numeroDePaginas,
+                 int codigoDeBarras, double preco, String formato) {
+        super(nome, editora, edicao, idioma, dataDePublicacao, numeroDePaginas, codigoDeBarras, preco);
+        this.formato = formato;
+    }
+
+
+    public void setFormato(String formato) {
+        this.formato = formato;
+    }
+
+    public String getFormato() {
+        return formato;
+    }
+    
+    public String toString() {
+        return String.format(super.toString() + "\nFormato: %s", formato);
     }
 }
