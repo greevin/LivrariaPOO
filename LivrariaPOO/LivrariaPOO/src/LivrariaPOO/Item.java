@@ -92,7 +92,7 @@ public class Item {
     //int numeroDePaginas, int codigoDeBarras, double preco
 
     public String toString() {
-        return String.format("Nome: %s " + "\nEditora: %s" + "\nEdicao: %s" + "\nIdioma: %s" +
+        return String.format("\nNome: %s " + "\nEditora: %s" + "\nEdicao: %s" + "\nIdioma: %s" +
                              "\nData de Publicação: %s" + "\nNumero de Páginas: %d" + "\nCódigo de Barras: %s" +
                              "\nPreço: %.2f", nome, editora, edicao, idioma, dataDePublicacao,
                              numeroDePaginas, codigoDeBarras, preco);
