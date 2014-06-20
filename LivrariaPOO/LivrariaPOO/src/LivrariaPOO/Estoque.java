@@ -12,10 +12,6 @@ public class Estoque {
         this.itens.add(item);
     }
     
-    public void listaItem(){
-        
-    }
-    
     //chama o metódo toString da classe Livros
     public String toString(){
         StringBuffer sb = new StringBuffer();

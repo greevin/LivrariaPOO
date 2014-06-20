@@ -113,8 +113,8 @@ public class Livro extends Item {
     }*/
 
     public Livro(String nome, String editora, int edicao, String idioma, String dataDePublicacao, int numeroDePaginas,
-                 int codigoDeBarras, double preco, String formato) {
-        super(nome, editora, edicao, idioma, dataDePublicacao, numeroDePaginas, codigoDeBarras, preco);
+                 int codigoDeBarras, double preco, String formato, int quantidade) {
+        super(nome, editora, edicao, idioma, dataDePublicacao, numeroDePaginas, codigoDeBarras, preco, quantidade);
         this.formato = formato;
     }
 

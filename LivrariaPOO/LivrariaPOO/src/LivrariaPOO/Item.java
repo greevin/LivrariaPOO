@@ -1,6 +1,6 @@
 package LivrariaPOO;
 
-public class Item {
+public abstract class Item {
     
     private String nome;
     private String editora;
@@ -10,10 +10,11 @@ public class Item {
     private int numeroDePaginas;
     private int codigoDeBarras;
     private double preco;
+    private int quantidade;
 
 
     public Item(String nome, String editora, int edicao, String idioma, String dataDePublicacao, int numeroDePaginas,
-                int codigoDeBarras, double preco) {
+                int codigoDeBarras, double preco, int quantidade) {
         this.nome = nome;
         this.editora = editora;
         this.edicao = edicao;
@@ -22,6 +23,7 @@ public class Item {
         this.numeroDePaginas = numeroDePaginas;
         this.codigoDeBarras = codigoDeBarras;
         this.preco = preco;
+        this.quantidade = quantidade;
     }
 
     public void setNome(String nome) {
@@ -88,13 +90,22 @@ public class Item {
         return preco;
     }
     
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+    
     //String nome, String editora, int edicao, String formato, String idioma, int dataDePublicacao,
-    //int numeroDePaginas, int codigoDeBarras, double preco
+    //int numeroDePaginas, int codigoDeBarras, double preco, int quantidade
 
     public String toString() {
         return String.format("\nNome: %s " + "\nEditora: %s" + "\nEdicao: %s" + "\nIdioma: %s" +
                              "\nData de Publicação: %s" + "\nNumero de Páginas: %d" + "\nCódigo de Barras: %s" +
-                             "\nPreço: %.2f", nome, editora, edicao, idioma, dataDePublicacao,
-                             numeroDePaginas, codigoDeBarras, preco);
+                             "\nPreço: %.2f" + "\nQuantidade: %d", nome, editora, edicao, idioma, dataDePublicacao,
+                             numeroDePaginas, codigoDeBarras, preco, quantidade);
     }
+
 }
