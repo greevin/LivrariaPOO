@@ -12,6 +12,12 @@ public class Estoque {
         this.itens.add(item);
     }
     
+    public void removeItem(Item item, int quantidade){
+        int i = item.getQuantidade() - quantidade;
+        //i--;
+        System.out.println("Quantidade Total do "+ item.getNome() + " em estoque: "+ i);
+    }
+    
     //chama o metódo toString da classe Livros
     public String toString(){
         StringBuffer sb = new StringBuffer();
@@ -23,13 +29,4 @@ public class Estoque {
         }
         return sb.toString();
     }
-    
-    /*public String toString(){
-        String resp;
-        for(Livro livros: resp);
-        return ;
-    }*/
-    
-    
-
 }

@@ -12,6 +12,7 @@ public class Filial {
         this.razaoSocial = razaoSocial;
         this.enderecoFisico = enderecoFisico;
         this.gerente = gerente;
+        this.estoque = estoque;
     }
 
 
@@ -23,11 +24,11 @@ public class Filial {
         return razaoSocial;
     }
 
-    public void setEnderecoFisico(LivrariaPOO.Endereco enderecoFisico) {
+    public void setEnderecoFisico(Endereco enderecoFisico) {
         this.enderecoFisico = enderecoFisico;
     }
 
-    public LivrariaPOO.Endereco getEnderecoFisico() {
+    public Endereco getEnderecoFisico() {
         return enderecoFisico;
     }
 
@@ -39,10 +40,18 @@ public class Filial {
         return gerente;
     }
     
+    public void setEstoque(Estoque estoque) {
+        this.estoque = estoque;
+    }
+
+    public Estoque getEstoque() {
+        return estoque;
+    }
+    
     //String razaoSocial, Endereco enderecoFisico, Gerente gerente
     public String toString(){
         return String.format("Razão Social: %s"+
                              "\nEndereço da Livraria: %s"+
-                             "\n%s", razaoSocial, enderecoFisico, gerente);
+                             "\nResponsável: %s" + "\nTotal de itens em estoque: ", razaoSocial, enderecoFisico, gerente.getNome(), estoque);
     }
 }

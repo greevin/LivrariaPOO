@@ -39,6 +39,7 @@ public class ItemPedido {
         return total = quantidade * item.getPreco();
     }
     
+    
     public String toString(){
         return String.format("\nSeu item: %s" + "\nPreço Unitário: %.2f" + "\nQuantidade: %d" + "\nTotal: %.2f", item.getNome(), item.getPreco(), quantidade, calculaValorTotal());
     }

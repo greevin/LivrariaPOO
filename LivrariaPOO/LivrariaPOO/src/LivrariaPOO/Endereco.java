@@ -1,5 +1,7 @@
 package LivrariaPOO;
 
+import java.util.ArrayList;
+
 public class Endereco {
     
     private String tipoDeLogradouro;
