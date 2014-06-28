@@ -3,7 +3,7 @@ package LivrariaPOO;
 import java.util.*;
 
 public class Teste {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws EstoqueEsgotadoException {
 
         Endereco[] enderecosClientes = new Endereco[4];
 
@@ -45,11 +45,15 @@ public class Teste {
             new Jornal("O Estado de Minas", "O Estado de Minas", 545454, "Português", "05/10/2013", 50, 22222222, 2,
                        3);
         
+        Revista revista1 = new Revista("Claudia", "Abril", 4343, "Português", "Abril 2014", 3434, 24242, 15, 5);
+        
         Estoque estoque = new Estoque();
         estoque.cadastraItem(livro1);
         estoque.cadastraItem(livro2);
         estoque.cadastraItem(jornal1);
+        estoque.cadastraItem(revista1);
         System.out.println(estoque);
+        
         estoque.removeItem(livro1, 2);
         estoque.removeItem(livro2, 3);
         System.out.println();
@@ -60,6 +64,15 @@ public class Teste {
         
         Filial filial2 = new Filial("Livraria da Vila", enderecosFilial[1], gerente2, estoque);
         System.out.println(filial2);
+        
+        ItemPedido item1 = new ItemPedido(livro1, 3);
+        
+        System.out.println();
+        Order order = new Order(cliente1, item1);
+        System.out.println("Seus pedidos:");
+        //order.comprarItem(2);
+        //order.calculaValorTotal();
+        System.out.println(order);
 
         /*ItemPedido item = new ItemPedido(livro2, 6);
         System.out.println("Pedido do cliente: " + cliente1.getNome());

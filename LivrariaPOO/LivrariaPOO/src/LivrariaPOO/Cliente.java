@@ -4,7 +4,6 @@ import java.util.*;
 
 /** 
  * Classe com informações sobre o Cliente
- * 
  * **/
 public class Cliente {
     

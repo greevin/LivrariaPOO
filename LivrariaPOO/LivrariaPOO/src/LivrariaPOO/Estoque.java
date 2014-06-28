@@ -10,12 +10,18 @@ public class Estoque {
     
     public void cadastraItem(Item item){
         this.itens.add(item);
+        System.out.println("Quantidade Total do "+ item.getNome() + " em estoque: "+ item.getQuantidade());
     }
     
     public void removeItem(Item item, int quantidade){
         int i = item.getQuantidade() - quantidade;
         //i--;
-        System.out.println("Quantidade Total do "+ item.getNome() + " em estoque: "+ i);
+        System.out.println("Quantidade Total do "+ item.getNome() + " em estoque após remover: "+ i);
+    }
+    
+    public void quantidadeTotal(Item item){
+        int total = item.getQuantidade();
+        System.out.println(total);
     }
     
     //chama o metódo toString da classe Livros
